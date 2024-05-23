@@ -21,5 +21,4 @@ RUN python set_server_password.py
 ADD --chown=${NB_USER}:users notebooks /home/${NB_USER}/
 
 RUN pip install voila
-RUN jupyter serverextension enable voila
 RUN jupyter server extension enable voila
